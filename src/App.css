@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.headerSection {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  padding: 10px;
+  background-color: rgb(156, 204, 255);
   color: white;
+  padding-top: 20px;
+  cursor: pointer;
 }
-
-.App-link {
-  color: #61dafb;
+.title {
+  font-size: 1rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title:hover {
+  color: black;
+}
+.center ul li {
+  display: inline-flex;
+  list-style: "none";
+  margin: 0px 10px;
+}
+.center ul li:hover {
+  color: black;
+}
+.left {
+  flex: 3;
+}
+.center {
+  flex: 4;
+}
+.search {
+  flex: 2;
+}
+.search input {
+  padding: 10px;
+  width: 20rem;
+  border-radius: 5px;
+  border: none;
+  margin-left: -50px;
+  margin-top: -20px;
+}
+.right {
+  flex: 4;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+.signin:hover {
+  color: black;
+}
+.cart {
+  color: rgb(156, 204, 255);
+  background-color: white;
+  border-radius: 5px;
+  width: 80px;
+  text-align: center;
+  padding: 10px;
+  margin-top: -10px;
+}
+.cart:hover {
+  color: white;
+  background-color: rgb(156, 204, 255);
+  border-radius: 5px;
+  width: 80px;
+  text-align: center;
+  padding: 10px;
+  margin-top: -10px;
+  border-width: 5px;
+  border-color: white;
+}
+.bannerBox {
+  margin: 10px 0;
+}
+.bannerBox img {
+  width: 100%;
+}
+.menImage {
+  display: flex;
+  gap: 10px;
+}
+.menImage img {
+  width: 220px;
+  height: 220px;
 }
